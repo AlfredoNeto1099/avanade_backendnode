@@ -9,14 +9,14 @@ jobs:
   build-and-deploy:
     name: Iniciando build e deploy
     runs-on: ubuntu-latest
-    enviroment: production
+    environment: production
     steps:
     - uses: actions/checkout@master
 
     - name: Configurando a versão do NodeJS
       uses: actions/setup-node@v1
       with:
-        node-version '16.x'
+        node-version: '16.x'
 
     - name: Estamos instalando dependências e compilando o projeto
       run: |
